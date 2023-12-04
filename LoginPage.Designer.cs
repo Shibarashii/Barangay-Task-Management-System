@@ -34,10 +34,12 @@
             this.PasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.NotFoundLabel = new System.Windows.Forms.Label();
             this.ShowPasswordImageCheckbox = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SignInButton
             // 
+            this.SignInButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SignInButton.Animated = true;
             this.SignInButton.BackColor = System.Drawing.Color.Transparent;
             this.SignInButton.BorderColor = System.Drawing.Color.Transparent;
@@ -62,6 +64,8 @@
             // 
             // EmailTextbox
             // 
+            this.EmailTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailTextbox.BackColor = System.Drawing.Color.Transparent;
             this.EmailTextbox.BorderColor = System.Drawing.Color.Gray;
             this.EmailTextbox.BorderRadius = 15;
@@ -96,6 +100,8 @@
             // 
             // PasswordTextbox
             // 
+            this.PasswordTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordTextbox.BackColor = System.Drawing.Color.Transparent;
             this.PasswordTextbox.BorderColor = System.Drawing.Color.Gray;
             this.PasswordTextbox.BorderRadius = 15;
@@ -130,6 +136,8 @@
             // 
             // NotFoundLabel
             // 
+            this.NotFoundLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NotFoundLabel.AutoSize = true;
             this.NotFoundLabel.BackColor = System.Drawing.Color.Transparent;
             this.NotFoundLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,6 +168,18 @@
             this.ShowPasswordImageCheckbox.UseTransparentBackground = true;
             this.ShowPasswordImageCheckbox.CheckedChanged += new System.EventHandler(this.ShowPasswordImageCheckbox_CheckedChanged);
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Font = new System.Drawing.Font("Poppins", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(321, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(651, 89);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Task Management System";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,6 +187,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ShowPasswordImageCheckbox);
             this.Controls.Add(this.NotFoundLabel);
             this.Controls.Add(this.PasswordTextbox);
@@ -190,6 +211,7 @@
         private Guna.UI2.WinForms.Guna2TextBox PasswordTextbox;
         private System.Windows.Forms.Label NotFoundLabel;
         private Guna.UI2.WinForms.Guna2ImageCheckBox ShowPasswordImageCheckbox;
+        private System.Windows.Forms.Label label2;
     }
 }
 
